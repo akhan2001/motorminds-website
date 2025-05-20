@@ -51,7 +51,9 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button className="hidden md:flex bg-transparent bg-white text-black border border-white hover:border-white hover:text-white hover:bg-none rounded-full px-7 py-2 transition-all duration-200 cursor-pointer">
+            <Button className="hidden md:flex bg-transparent bg-white text-black border border-white hover:border-white hover:text-white hover:bg-black rounded-full px-7 py-2 transition-all duration-200 cursor-pointer"
+              onClick={() => window.open("https://app.motorminds.ca", "_blank")}
+            >
               LOGIN
               <ChevronRight className="ml-1 h-4 w-4" />
             </Button>
@@ -93,7 +95,9 @@ export function Navbar() {
                     </nav>
                   </div>
                   <div className="p-6 border-t border-[#212529]">
-                    <Button className="w-full bg-white text-black hover:bg-gray-100 rounded-full">
+                    <Button className="w-full bg-white text-black hover:bg-gray-100 rounded-full"
+                      onClick={() => window.open("https://app.motorminds.ca", "_blank")}
+                    >
                       LOGIN
                       <ChevronRight className="ml-1 h-4 w-4" />
                     </Button>
