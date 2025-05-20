@@ -29,7 +29,7 @@ export default async function LogoCarousel() {
   return (
     <section className="py-12 bg-black/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
-        <h3 className="text-center text-gray-400 text-sm uppercase tracking-wider mb-8">
+        <h3 className="text-center text-gray-300 text-sm uppercase tracking-wider mb-8">
           Trusted by Leading Auto Brands
         </h3>
         <div className="logos-container">

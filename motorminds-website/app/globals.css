@@ -31,6 +31,46 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Scrollbar Styles */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 1px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Hide default scrollbar for Firefox */
+.scrollbar-thin {
+  scrollbar-width: none;
+}
+
+/* Custom progress bar */
+.scroll-progress-container {
+  position: relative;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.scroll-progress-bar {
+  position: absolute;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: width 0.1s ease-out;
+}
+
 .vignette {
   position: relative;
 }

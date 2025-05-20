@@ -4,74 +4,26 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronRight } from "lucide-react"
-import { motion, useScroll, useMotionValueEvent } from "framer-motion"
-import { useState } from "react"
 
 export function Navbar() {
-    const [isVisible, setIsVisible] = useState(true)
-    const [lastScrollY, setLastScrollY] = useState(0)
-    const [isAtTop, setIsAtTop] = useState(true)
-
-    useMotionValueEvent(useScroll().scrollY, "change", (latest) => {
-        // Check if we're at the top
-        setIsAtTop(latest < 20)
-
-        // Determine scroll direction and update visibility
-        if (latest > lastScrollY) {
-            // Scrolling down
-            setIsVisible(false)
-        } else {
-            // Scrolling up
-            setIsVisible(true)
-        }
-
-        setLastScrollY(latest)
-    })
-
-    const navVariants = {
-        visible: { 
-            y: 0,
-            opacity: 1,
-            transition: {
-                type: "spring",
-                stiffness: 400,
-                damping: 30
-            }
-        },
-        hidden: { 
-            y: -100,
-            opacity: 0,
-            transition: {
-                type: "spring",
-                stiffness: 400,
-                damping: 30
-            }
-        }
-    }
-
     return (
-        <motion.header 
-            variants={navVariants}
-            animate={isVisible ? "visible" : "hidden"}
-            initial="visible"
-            className={`fixed top-0 left-0 right-0 z-50 bg-black ${
-                !isAtTop ? 'bg-opacity-50 backdrop-blur-md shadow-lg' : 'bg-opacity-90'
-            } transition-all duration-300`}
-        >
-            <nav className="container mx-auto px-4 py-6 border-b border-[#5d5d5d]">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-md border-b border-[#212529]">
+            <nav className="container mx-auto px-4 py-3">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                        <div className="font-bold text-xl">
-                            <Link href="/">
+                        <div className="flex items-center space-x-3">
+                            <Link href="/" className="flex items-center space-x-3 hover:opacity-90 transition-all duration-200 group">
                                 <Image
-                                    src="/motorminds-horizontal-logo-black.png"
+                                    src="/motorminds-logo-white.png"
                                     alt="Motorminds Logo"
-                                    width={180}
-                                    height={40}
+                                    width={25}
+                                    height={25}
+                                    className="group-hover:opacity-90 transition-opacity duration-200"
                                 />
+                                <span className="text-white text-l font-semibold group-hover:opacity-90 transition-opacity duration-200">MOTORMINDS</span>
                             </Link>
                         </div>
-                        <div className="hidden md:flex space-x-6 ml-10">
+                        <div className="flex items-center space-x-6">
                             <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
                                 About Us
                             </Link>
@@ -86,12 +38,12 @@ export function Navbar() {
                             </Link>
                         </div>
                     </div>
-                    <Button className="bg-transparent hover:bg-[#e5383b] text-[#e5383b] border border-[#e5383b] hover:border-[#e5383b] hover:text-white rounded-full px-6 transition-all duration-200 cursor-pointer">
+                    <Button className="bg-transparent bg-white text-black border border-white hover:border-white hover:text-white hover:bg-none rounded-full px-7 py-2 transition-all duration-200 cursor-pointer">
                         LOGIN
                         <ChevronRight className="ml-1 h-4 w-4" />
                     </Button>
                 </div>
             </nav>
-        </motion.header>
+        </header>
     )
 }

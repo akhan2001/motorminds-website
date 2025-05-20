@@ -1,9 +1,12 @@
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { ChevronRight } from "lucide-react"
 
 export default function Hero() {
   return (
     <section className="relative w-full min-h-[80vh] bg-black overflow-hidden">
       {/* Abstract light trail */}
+      {/* Commented out background image for now
       <div className="absolute left-0 top-0 h-full w-full z-0">
         <Image
           src="/Motorminds Website Background.png"
@@ -13,6 +16,7 @@ export default function Hero() {
           priority
         />
       </div>
+      */}
 
       <div className="container relative z-10 mx-auto px-4 py-12 flex flex-col h-full">
         {/* Logo/Brand */}
@@ -32,6 +36,10 @@ export default function Hero() {
               Revolutionize your auto shop with our AI-powered management tool. From lead generation to customer
               management and shop operations, Motorminds simplifies every aspect of your business.
             </p>
+            <Button className="bg-[#d90429] hover:bg-[#ba181b] text-white px-8 py-6 text-lg transition-all duration-200">
+              GET STARTED NOW
+              <ChevronRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
 
           <div className="hidden md:block relative">
