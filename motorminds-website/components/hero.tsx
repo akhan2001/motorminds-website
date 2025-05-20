@@ -42,12 +42,12 @@ export default function Hero() {
                 GET STARTED NOW
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
-              <VideoModal videoSrc="/motorminds-demo.mp4">
+              {/* <VideoModal videoSrc="/motorminds-demo.mp4"> */}
                 <Button variant="ghost" className="border-white text-white hover:bg-white hover:text-black px-6 py-2 text-sm transition-all duration-200 rounded-full">
                   WATCH DEMO
                   <Play className="ml-2 h-4 w-4" />
                 </Button>
-              </VideoModal>
+              {/* </VideoModal> */}
             </div>
           </div>
 
