@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, Play } from "lucide-react"
+import { VideoModal } from "@/components/ui/video-modal"
 
 export default function Hero() {
   return (
@@ -20,26 +21,34 @@ export default function Hero() {
 
       <div className="container relative z-10 mx-auto px-4 py-12 flex flex-col h-full">
         {/* Logo/Brand */}
-        <div className="mb-16 mt-8">
-          <h2 className="text-white text-lg font-medium tracking-wider">MOTORMINDS</h2>
+        <div className="mb-12 mt-6">
+          <h2 className="text-white text-base font-medium tracking-wider">MOTORMINDS</h2>
         </div>
 
         {/* Main content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+          <div className="space-y-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Accelerate Your
               <br />
               Auto Shop
             </h1>
-            <p className="text-gray-300 text-lg max-w-xl">
+            <p className="text-gray-300 text-base max-w-xl">
               Revolutionize your auto shop with our AI-powered management tool. From lead generation to customer
               management and shop operations, Motorminds simplifies every aspect of your business.
             </p>
-            <Button className="bg-[#d90429] hover:bg-[#ba181b] text-white px-8 py-6 text-lg transition-all duration-200">
-              GET STARTED NOW
-              <ChevronRight className="ml-2 h-5 w-5" />
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button className="bg-[#d90429] hover:bg-[#ba181b] text-white px-6 py-2 text-sm transition-all duration-200 rounded-full">
+                GET STARTED NOW
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+              <VideoModal videoSrc="/motorminds-demo.mp4">
+                <Button variant="ghost" className="border-white text-white hover:bg-white hover:text-black px-6 py-2 text-sm transition-all duration-200 rounded-full">
+                  WATCH DEMO
+                  <Play className="ml-2 h-4 w-4" />
+                </Button>
+              </VideoModal>
+            </div>
           </div>
 
           <div className="hidden md:block relative">

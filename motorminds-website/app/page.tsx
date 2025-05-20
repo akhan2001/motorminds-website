@@ -9,6 +9,7 @@ import AnimatedCards from "@/components/animated-cards";
 import InfoScroll from "@/components/info-scroll";
 import CTABanner from "@/components/cta-banner";
 import Footer from "@/components/footer";
+import SolutionGrid from "@/components/solution-grid";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <LogoCarousel />
       <Features />
+      <SolutionGrid />
       <InfoScroll />
       {/* <AnimatedCards /> */}
       <CTABanner />
