@@ -11,11 +11,11 @@ import {
 } from "@/components/ui/sheet"
 
 const navLinks = [
-  { href: "#", label: "About Us" },
-  { href: "#", label: "Features" },
-  { href: "#", label: "Products" },
-  { href: "#", label: "Pricing" },
-  { href: "#", label: "Contact Us" },
+  { href: "/about-us", label: "About Us" },
+  { href: "/features", label: "Features" },
+  { href: "/products", label: "Products" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 export function Navbar() {
