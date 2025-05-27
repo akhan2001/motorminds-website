@@ -16,7 +16,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
       <Hero />
-      <LogoCarousel />
+      {/* <LogoCarousel /> */}
       <Features />
       <SolutionGrid />
       <InfoScroll />
