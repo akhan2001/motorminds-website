@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PricingCard from "./pricing-card";
 import { Switch } from "@/components/ui/switch";
+import Image from "next/image";
 
 const pricingPlans = [
     {
@@ -65,8 +66,21 @@ export default function PricingSection() {
     const [isYearly, setIsYearly] = useState(false);
 
     return (
-        <section className="py-20 bg-black">
-            <div className="container mx-auto px-4">
+        <section className="pt-20 pb-40 bg-black relative">
+            {/* Background Image */}
+            <div className="absolute inset-0 w-full h-full">
+                <Image
+                    src="/motorminds-homepage-background.png"
+                    alt="MotorMinds Background"
+                    fill
+                    className="object-cover opacity-10 mix-blend-overlay"
+                    priority
+                    quality={100}
+                />
+            </div>
+
+            {/* Content */}
+            <div className="container mx-auto px-4 relative z-10">
                 <div className="flex flex-col items-center mb-12">
                     <h2 className="text-3xl font-bold text-white mb-8">
                         Choose a plan that's right for you
