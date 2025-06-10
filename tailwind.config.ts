@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         bricolage: ['var(--font-bricolage)'],
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
       },
     },
   },
