@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
 import CTABanner from "@/components/cta-banner";
-import HeroBanner from "./components/hero-banner";
+// import HeroBanner from "./components/hero-banner";
+import HeroBanner from "@/components/hero-banner";
 import OurStory from "./components/our-story";
 import TeamSection from "./components/team-section";
 
@@ -10,7 +11,7 @@ export default function AboutUs() {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
       <main>
-        <HeroBanner />
+        <HeroBanner title="About Us" backgroundImage="/about-hero.png" imageAlt="About Us" />
         <TeamSection />
         <OurStory />
         <CTABanner />

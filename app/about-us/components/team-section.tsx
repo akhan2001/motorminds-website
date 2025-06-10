@@ -6,15 +6,7 @@ const founders = [
     name: "Abdullah",
     role: "Co-Founder & CTO",
     description: "Service advisor turned software developer, leading technical innovation and development.",
-    image: "/motorminds-logo-white.png",
-    linkedin: "#",
-    twitter: "#"
-  },
-  {
-    name: "Zaid",
-    role: "Co-Founder & COO",
-    description: "Operations and cloud technology expert, driving scalable business solutions.",
-    image: "/motorminds-logo-white.png",
+    image: "/team-images/abdullah-khan.png",
     linkedin: "#",
     twitter: "#"
   },
@@ -22,7 +14,15 @@ const founders = [
     name: "Hussain",
     role: "Co-Founder & CEO",
     description: "Visionary leader with expertise in legal, financials, and business strategy.",
-    image: "/motorminds-logo-white.png",
+    image: "/team-images/hussain-siddiqui.png",
+    linkedin: "#",
+    twitter: "#"
+  },
+  {
+    name: "Zaid",
+    role: "Co-Founder & COO",
+    description: "Operations and cloud technology expert, driving scalable business solutions.",
+    image: "/team-images/zaid-khusro.png",
     linkedin: "#",
     twitter: "#"
   }
@@ -48,13 +48,10 @@ export default function TeamSection() {
                   <Image
                     src={founder.image}
                     alt={founder.name}
-                    width={100}
-                    height={100}
-                    className="opacity-50"
+                    fill
+                    className="object-cover opacity-80"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white/20">{founder.name[0]}</span>
-                  </div>
                 </div>
                 
                 <div className="p-6">

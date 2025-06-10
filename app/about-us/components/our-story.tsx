@@ -1,6 +1,6 @@
 export default function OurStory() {
   return (
-    <section className="py-20 bg-black">
+    <section className="pt-20 pb-40 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Story</h2>
@@ -9,9 +9,10 @@ export default function OurStory() {
             <p>
               MotorMinds began as a shared vision between three co-founders, united by their love for cars and technology. 
               Abdullah, with years of experience as a service advisor and a background in software development, recognized 
-              the challenges auto shops face in adapting to modern demands. Zaid, a cloud technology expert, brought the 
-              technical foundation necessary to build a scalable and reliable platform. Hussain, with expertise in legal, 
-              financials, and business strategy, laid the groundwork for sustainable growth.
+              the challenges auto shops face in adapting to modern demands. Hussain, with expertise in legal, financials, and business 
+              strategy, laid the groundwork for sustainable growth. Zaid, a cloud technology expert with extensive project 
+              management experience leading high-performance teams, brought the technical foundation and organizational expertise 
+              necessary to build a scalable and reliable platform.
             </p>
             
             <p>
