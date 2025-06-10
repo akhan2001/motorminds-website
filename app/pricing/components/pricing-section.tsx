@@ -100,11 +100,9 @@ export default function PricingSection() {
                                 Yearly
                             </span>
                         </div>
-                        {isYearly && (
-                            <span className="text-red-500 text-sm">
-                                Save 20% with yearly billing
-                            </span>
-                        )}
+                        <span className="text-red-500 text-sm">
+                            Save 20% with yearly billing
+                        </span>
                     </div>
                 </div>
 

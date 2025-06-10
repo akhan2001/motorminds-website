@@ -77,7 +77,7 @@ export default function PricingCard({
                         : isEnterprise
                         ? 'bg-zinc-800 text-white hover:bg-zinc-700 border border-white/20'
                         : 'bg-zinc-800 text-white hover:bg-zinc-700 border border-red-500'
-                } rounded-full`}
+                } rounded-full cursor-pointer`}
             >
                 {isEnterprise ? 'Contact Sales' : 'Get Started'}
             </Button>
