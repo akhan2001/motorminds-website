@@ -36,8 +36,9 @@ export default function Hero() {
 				{/* CTA Button */}
 				<div className="animate-fade-up-delay-3">
 					<Button 
+						variant="gradient-red"
 						size="lg"
-						className="bg-[#B22222] text-white hover:bg-[#B22222]/90 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:bg-[#B22222]/90"
+						className="px-8 py-4 text-lg font-semibold rounded-full"
 					>
 						Start Exploring
 						<ChevronRight className="ml-2 h-5 w-5" />

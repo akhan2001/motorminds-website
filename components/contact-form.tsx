@@ -141,7 +141,7 @@ export default function ContactForm() {
           />
         </div>
 
-        <Button type="submit" className="w-full bg-red-500 hover:bg-red-600 text-white">
+        <Button type="submit" variant="gradient-red" className="w-full">
           Submit
         </Button>
       </form>
