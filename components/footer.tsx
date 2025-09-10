@@ -129,9 +129,6 @@ export default function Footer() {
               <Link href="/terms" className="hover:text-gray-400 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/cookies" className="hover:text-gray-400 transition-colors">
-                Cookie Policy
-              </Link>
             </div>
           </div>
         </div>
