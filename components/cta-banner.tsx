@@ -11,7 +11,7 @@ export default function CTABanner() {
 			{/* Background image */}
 			<div className="absolute inset-0">
 				<Image
-					src="/ferrari-autoshop-image.jpg"
+					src="/cta-banner.png"
 					alt="Luxury auto shop with Ferrari"
 					fill
 					className="object-cover"

@@ -11,7 +11,7 @@ export default function ContactUs() {
 			<main>
 				<HeroBanner 
 					title="Contact Us" 
-					backgroundImage="/about-hero.png" 
+					backgroundImage="/contact-us-image.png" 
 					imageAlt="Contact Us" 
 				/>
 				

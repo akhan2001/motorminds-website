@@ -8,7 +8,7 @@ export default function Hero() {
 			{/* Background Image */}
 			<div className="absolute inset-0 animate-fade-in">
 				<Image
-					src="/motorminds-logo/motorminds-presentation-slide.png"
+					src="/motorminds-logo/motorminds-presentation-slide (1).png"
 					alt="MotorMinds Hero Background"
 					fill
 					className="object-cover"
