@@ -35,14 +35,16 @@ export default function Hero() {
 
 				{/* CTA Button */}
 				<div className="animate-fade-up-delay-3">
-					<Button 
-						variant="gradient-red"
-						size="lg"
-						className="px-8 py-4 text-lg font-semibold rounded-full"
-					>
-						Start Exploring
-						<ChevronRight className="ml-2 h-5 w-5" />
-					</Button>
+					<a href="/contact-us">
+						<Button 
+							variant="gradient-red"
+							size="lg"
+							className="px-8 py-4 text-lg font-semibold rounded-full cursor-pointer"
+						>
+							Get Started
+							<ChevronRight className="ml-2 h-5 w-5" />
+						</Button>
+					</a>
 				</div>
 			</div>
 		</section>

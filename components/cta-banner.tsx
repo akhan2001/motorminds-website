@@ -30,7 +30,7 @@ export default function CTABanner() {
 					Book your appointment today and discover how MotorMinds can revolutionize your business operations
 				</p>
 				<Link href="/contact-us">
-					<Button variant="gradient-red" size="lg" className="px-6 py-5 text-base rounded-full">
+					<Button variant="gradient-red" size="lg" className="px-6 py-5 text-base rounded-full cursor-pointer">
 						Schedule a Demo
 						<ChevronRight className="ml-2 h-4 w-4" />
 					</Button>
