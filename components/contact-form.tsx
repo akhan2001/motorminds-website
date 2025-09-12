@@ -92,7 +92,7 @@ This message was sent from the MotorMinds contact form.
             console.error('EmailJS Error:', err);
             console.error('Service ID:', process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
             console.error('Public Key:', process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ? 'Present' : 'Missing');
-            setError(`Failed to send message: ${err.message || 'Unknown error'}. Please try again or contact us directly.`);
+            setError(`Failed to send message: ${err instanceof Error ? err.message : 'Unknown error'}. Please try again or contact us directly.`);
             setIsSubmitting(false);
         }
     };
