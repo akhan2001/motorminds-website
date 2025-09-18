@@ -11,8 +11,8 @@ export default function Features() {
 			<main>
 				<HeroBanner 
 					title="Features" 
-					backgroundImage="/features-page-image(1).png" 
-					imageAlt="MotorMinds Features" 
+					backgroundImage="/features-page-image(1).png"
+					imageAlt="MotorMinds Features"
 				/>
 
 				{/* AI-Powered Automotive Diagnostics */}
