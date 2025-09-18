@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface FeatureSectionProps {
     image: string;
     imageAlt: string;
@@ -24,13 +22,10 @@ export default function FeatureSection({
                     {/* Image */}
                     <div className="flex-1">
                         <div className="relative w-full h-[400px] bg-gray-800 rounded-lg overflow-hidden">
-                            <Image
+                            <img
                                 src={image}
                                 alt={imageAlt}
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                unoptimized={true}
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
