@@ -32,6 +32,7 @@ export function Navbar() {
 				  width={25}
 				  height={25}
 				  className="group-hover:opacity-90 transition-opacity duration-200"
+				  style={{ width: 'auto', height: 'auto' }}
 				/>
 				<span className="text-white text-l font-semibold group-hover:opacity-90 transition-opacity duration-200">MOTORMINDS</span>
 			  </Link>
@@ -79,6 +80,7 @@ export function Navbar() {
 						alt="Motorminds Logo"
 						width={25}
 						height={25}
+						style={{ width: 'auto', height: 'auto' }}
 					  />
 					  <span className="text-white text-l font-semibold">MOTORMINDS</span>
 					</Link>

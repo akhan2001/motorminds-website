@@ -30,6 +30,7 @@ export default function FeatureSection({
                                 width={500}
                                 height={300}
                                 className="w-full h-auto object-cover"
+                                unoptimized={true}
                             />
                         </div>
                     </div>

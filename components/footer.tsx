@@ -67,6 +67,7 @@ export default function Footer() {
 								alt="Motorminds Logo"
 								width={30}
 								height={30}
+								style={{ width: 'auto', height: 'auto' }}
 							/>
 							<span className="text-xl font-semibold text-white">MOTORMINDS</span>
 						</Link>

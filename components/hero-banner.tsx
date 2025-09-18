@@ -21,6 +21,7 @@ export default function HeroBanner({
                     fill
                     className="object-cover"
                     priority
+                    unoptimized={true}
                 />
             </div>
             
