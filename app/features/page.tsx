@@ -12,7 +12,7 @@ export default function Features() {
 			<main>
 				<HeroBanner 
 					title="Features" 
-					backgroundImage="/features-images/features-page-image(1).png"
+					backgroundImage="/features-page-image(1).png"
 					imageAlt="MotorMinds Features"
 				/>
 
