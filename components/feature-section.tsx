@@ -23,14 +23,13 @@ export default function FeatureSection({
                 <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12`}>
                     {/* Image */}
                     <div className="flex-1">
-                        <div className="relative rounded-lg overflow-hidden">
+                        <div className="relative w-full h-[400px] bg-gray-800 rounded-lg overflow-hidden">
                             <Image
                                 src={image}
                                 alt={imageAlt}
-                                width={500}
-                                height={300}
-                                className="w-full h-auto object-cover"
-                                unoptimized={true}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                         </div>
                     </div>
