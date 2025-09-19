@@ -137,7 +137,7 @@ export default function Footer() {
 							<Link href="https://www.facebook.com/people/Motorminds/61573946469903/#" target="_blank" className="text-gray-300 hover:text-white transition-colors">
 								<Facebook className="h-5 w-5" />
 							</Link>
-							<Link href="https://www.facebook.com/people/Motorminds/61573946469903/#" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+							<Link href="https://www.instagram.com/motorminds.ca" target="_blank" className="text-gray-300 hover:text-white transition-colors">
 								<Instagram className="h-5 w-5" />
 							</Link>
 							<Link href="https://www.linkedin.com/company/motorminds/" target="_blank" className="text-gray-300 hover:text-white transition-colors">
