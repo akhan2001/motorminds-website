@@ -8,12 +8,12 @@ export default function FeatureSection2() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Image - Left */}
                     <div className="relative order-2 lg:order-1">
-                        <div className="aspect-square bg-[#131412] border border-[#1f250e] rounded-2xl overflow-hidden">
+                        <div className="aspect-square bg-[#131412] border-2 border-red-500 rounded-2xl overflow-hidden">
                             <Image
-                                src="/mia-diagnostics-image.png"
+                                src="/dashboard/ai-voice-calling-image.png"
                                 alt="MIA Diagnostic Analysis"
                                 fill
-                                className="object-cover"
+                                className="object-cover border-2 border-red-500 rounded-2xl"
                                 unoptimized={true}
                             />
                         </div>

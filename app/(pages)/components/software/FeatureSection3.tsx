@@ -47,12 +47,12 @@ export default function FeatureSection3() {
                     
                     {/* Image - Right */}
                     <div className="relative">
-                        <div className="aspect-square bg-[#131412] border border-[#1f250e] rounded-2xl overflow-hidden">
+                        <div className="aspect-square bg-[#131412] border-2 border-red-500 rounded-2xl overflow-hidden">
                             <Image
-                                src="/parts-diagnostics.png"
+                                src="/dashboard/mia-diagnostics-image.png"
                                 alt="Parts & Diagnostics Dashboard"
                                 fill
-                                className="object-cover"
+                                className="object-cover border-2 border-red-500 rounded-2xl"
                                 unoptimized={true}
                             />
                         </div>

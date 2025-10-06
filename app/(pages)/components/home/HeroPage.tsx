@@ -5,10 +5,16 @@ import SoftwareFeatures from "../software/SoftwareFeatures";
 import FeatureSection1 from "../software/FeatureSection1";
 import FeatureSection2 from "../software/FeatureSection2";
 import FeatureSection3 from "../software/FeatureSection3";
+import CTABanner from "../common/CTABanner";
+import { Navbar } from "../common/NavBar";
+import Footer from "../common/Footer";
 
 export default function HeroPage() {
     return (
         <>
+        {/* Navbar */}
+        <Navbar />
+        
         <section className="min-h-screen w-full flex items-center justify-center overflow-hidden bg-black relative">
             <AnimatedGridPattern />
             {/* Background grid pattern */}
@@ -55,6 +61,12 @@ export default function HeroPage() {
         
         {/* Feature Section 3 - Parts & Diagnostics */}
         <FeatureSection3 />
+        
+        {/* CTA Banner */}
+        <CTABanner />
+        
+        {/* Footer */}
+        <Footer />
         </> 
     );
 }

@@ -1,10 +1,11 @@
 import { 
     Users, 
+    Wrench, 
     Calendar, 
     FileText, 
-    CreditCard, 
-    Shield, 
-    BarChart3 
+    Phone, 
+    Brain, 
+    Package 
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
@@ -17,40 +18,40 @@ interface SoftwareFeature {
 
 const softwareFeatures: SoftwareFeature[] = [
     {
-        id: "manage-customers",
-        icon: Users,
-        title: "Manage Customers",
-        description: "Customer Management feature helps you keep track of customer information and service history."
+        id: "work-orders",
+        icon: Wrench,
+        title: "Work Orders", 
+        description: "Create, manage, and track work orders from start to finish with detailed job descriptions and progress updates."
     },
     {
-        id: "appointment-scheduling",
+        id: "appointments",
         icon: Calendar,
-        title: "Appointment Scheduling", 
-        description: "Easily manage service appointments, track repair schedules, and oversee all bookings in real-time."
+        title: "Appointments",
+        description: "Schedule and manage service appointments with automated reminders and real-time availability tracking."
     },
     {
-        id: "service-contracts",
+        id: "invoices",
         icon: FileText,
-        title: "Service Contracts",
-        description: "Generate, send, and collect digital service agreements with custom e-signatures to streamline client contracts."
+        title: "Invoices",
+        description: "Generate professional invoices, track payments, and manage billing with integrated accounting features."
     },
     {
-        id: "easy-payments",
-        icon: CreditCard,
-        title: "Easy Payments",
-        description: "Accept payments securely and seamlessly through multiple channels using your own accounts."
+        id: "ai-calling",
+        icon: Phone,
+        title: "AI Calling",
+        description: "Automated AI-powered customer calls for updates, reminders, and follow-ups to improve customer communication."
     },
     {
-        id: "vehicle-inspections",
-        icon: Shield,
-        title: "Vehicle Inspections",
-        description: "Conduct thorough vehicle inspections and document findings directly through the platform for better service quality."
+        id: "mia-diagnostics",
+        icon: Brain,
+        title: "MIA Diagnostics",
+        description: "AI-powered diagnostic analysis to identify vehicle issues, recommend solutions, and streamline repair processes."
     },
     {
-        id: "business-analytics",
-        icon: BarChart3,
-        title: "Business Analytics",
-        description: "Unlock powerful insights to improve shop efficiency, predict maintenance needs, and drive profitability."
+        id: "parts-sourcing",
+        icon: Package,
+        title: "Parts Sourcing",
+        description: "Intelligent parts sourcing system with supplier integration, inventory tracking, and automated ordering capabilities."
     }
 ];
 

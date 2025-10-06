@@ -47,12 +47,13 @@ export default function FeatureSection1() {
                     
                     {/* Image - Right */}
                     <div className="relative">
-                        <div className="aspect-square bg-[#131412] border border-[#1f250e] rounded-2xl overflow-hidden">
+                        <div className="aspect-square bg-[#131412] border-2 border-red-500 rounded-2xl overflow-hidden">
                             <Image
-                                src="/public/dashboard/management-dashboard.png"
+                                src="/dashboard/management-image.png"
                                 alt="Shop Management Dashboard"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                className="object-cover border-1 border-red-600 rounded-2xl"
                                 unoptimized={true}
                             />
                         </div>
