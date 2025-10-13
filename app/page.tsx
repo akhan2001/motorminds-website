@@ -19,7 +19,7 @@ export default function Home() {
       {/* <LogoCarousel /> */}
       <Features />
       <SolutionGrid />
-      <InfoScroll />
+      {/* <InfoScroll /> */}
       {/* <AnimatedCards /> */}
       <CTABanner />
       <Footer />
