@@ -14,16 +14,17 @@ import HeroPage from "./(pages)/components/home/HeroPage";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Navbar />
-      <Hero />
-      {/* <LogoCarousel /> */}
-      <Features />
-      <SolutionGrid />
-      {/* <InfoScroll /> */}
-      {/* <AnimatedCards /> */}
-      <CTABanner />
-      <Footer />
-    </div>
+    // <div className="min-h-screen bg-black text-white">
+    //   <Navbar />
+    //   <Hero />
+    //   {/* <LogoCarousel /> */}
+    //   <Features />
+    //   <SolutionGrid />
+    //   <InfoScroll />
+    //   {/* <AnimatedCards /> */}
+    //   <CTABanner />
+    //   <Footer />
+    // </div>
+    <HeroPage />
   );
 }
