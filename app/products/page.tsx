@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navbar";
+import { Navbar } from "@/app/(pages)/components/common/NavBar";
 import Footer from "@/components/footer";
 import CTABanner from "@/components/cta-banner";
 import Image from "next/image";
