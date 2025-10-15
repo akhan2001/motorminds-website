@@ -34,7 +34,7 @@ export default function ScrollingCarousel({
     direction = 'left',
     className 
 }: ScrollingCarouselProps) {
-    const containerRef = useRef<HTMLDivElement>(null);
+    const containerRef = useRef<HTMLUListElement>(null);
     const [translateX, setTranslateX] = useState(0);
 
     useEffect(() => {

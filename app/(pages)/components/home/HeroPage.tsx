@@ -1,4 +1,4 @@
-import HeroCTAs from './HeroCTAs.tsx';
+import HeroCTAs from './HeroCTAs';
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
 import FeatureCarousel from "@/components/ui/feature-carousel";
 import SoftwareFeatures from "../software/SoftwareFeatures";
