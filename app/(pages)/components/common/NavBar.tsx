@@ -53,9 +53,17 @@ export function Navbar() {
 
                     <div className="flex items-center space-x-4">
                         <Button
-                            variant="outline"
-                            className="hidden md:flex rounded-full px-6 py-2 border-white bg-none text-black cursor-pointer"
-                            onClick={() => window.open("/contact-us", "_self")}
+                            variant="ghost"
+                            className="hidden md:flex rounded-full px-6 py-2 text-white hover:bg-white hover:text-black cursor-pointer border-1 border-white"
+                            onClick={() => {
+                                // @ts-ignore
+                                if (typeof Calendly !== 'undefined') {
+                                    // @ts-ignore
+                                    Calendly.initPopupWidget({url: 'https://calendly.com/motorminds-info/30min'});
+                                } else {
+                                    window.open("https://calendly.com/motorminds-info/30min", "_blank");
+                                }
+                            }}
                         >
                             Book Demo
                         </Button>
@@ -107,9 +115,17 @@ export function Navbar() {
                                     </div>
                                     <div className="p-6 border-t border-[#212529] space-y-3">
                                         <Button
-                                            variant="outline"
-                                            className="w-full rounded-full border-gray-600 text-white hover:bg-gray-800"
-                                            onClick={() => window.open("/contact-us", "_self")}
+                                            variant="ghost"
+                                            className="w-full rounded-full text-white hover:bg-white/10"
+                                            onClick={() => {
+                                                // @ts-ignore
+                                                if (typeof Calendly !== 'undefined') {
+                                                    // @ts-ignore
+                                                    Calendly.initPopupWidget({url: 'https://calendly.com/motorminds-info/30min'});
+                                                } else {
+                                                    window.open("https://calendly.com/motorminds-info/30min", "_blank");
+                                                }
+                                            }}
                                         >
                                             Book Demo
                                         </Button>
