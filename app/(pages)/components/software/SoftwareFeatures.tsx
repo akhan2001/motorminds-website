@@ -18,24 +18,6 @@ interface SoftwareFeature {
 
 const softwareFeatures: SoftwareFeature[] = [
     {
-        id: "work-orders",
-        icon: Wrench,
-        title: "Work Orders", 
-        description: "Create, manage, and track work orders from start to finish with detailed job descriptions and progress updates."
-    },
-    {
-        id: "appointments",
-        icon: Calendar,
-        title: "Appointments",
-        description: "Schedule and manage service appointments with automated reminders and real-time availability tracking."
-    },
-    {
-        id: "invoices",
-        icon: FileText,
-        title: "Invoices",
-        description: "Generate professional invoices, track payments, and manage billing with integrated accounting features."
-    },
-    {
         id: "ai-calling",
         icon: Phone,
         title: "AI Calling",
@@ -52,6 +34,24 @@ const softwareFeatures: SoftwareFeature[] = [
         icon: Package,
         title: "Parts Sourcing",
         description: "Intelligent parts sourcing system with supplier integration, inventory tracking, and automated ordering capabilities."
+    },
+    {
+        id: "work-orders",
+        icon: Wrench,
+        title: "Work Orders", 
+        description: "Create, manage, and track work orders from start to finish with detailed job descriptions and progress updates."
+    },
+    {
+        id: "appointments",
+        icon: Calendar,
+        title: "Appointments",
+        description: "Schedule and manage service appointments with automated reminders and real-time availability tracking."
+    },
+    {
+        id: "invoices",
+        icon: FileText,
+        title: "Invoices",
+        description: "Generate professional invoices, track payments, and manage billing with integrated accounting features."
     }
 ];
 

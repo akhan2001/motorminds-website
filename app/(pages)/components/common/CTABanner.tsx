@@ -9,7 +9,7 @@ export default function CTABanner() {
                     <div className="mb-8">
                         <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
                             Transform your auto shop. <br />
-                            <span className="text-red-500">Start your free trial.</span>
+                            <span className="text-red-500">Book a Demo Now.</span>
                         </h2>
                     </div>
                     
@@ -18,7 +18,7 @@ export default function CTABanner() {
                             variant="gradient-red"
                             className="px-12 py-4 text-lg font-medium rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer"
                         >
-                            <Link href="/contact-us">Start Free Trial</Link>
+                            <Link href="/contact-us">Book a Demo</Link>
                         </Button>
                     </div>
                 </div>
