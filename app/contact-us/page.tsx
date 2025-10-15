@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navbar";
+import { Navbar } from "@/app/(pages)/components/common/NavBar";
 import Footer from "@/components/footer";
 import ContactForm from "@/components/contact-form";
 import ContactInfo from "@/components/contact-info";

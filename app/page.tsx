@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/navbar";
+import { Navbar } from "@/app/(pages)/components/common/NavBar";
 import LogoCarousel from "@/components/logo-carousel";
 import Hero from "@/components/hero";
 import Features from "@/components/features";

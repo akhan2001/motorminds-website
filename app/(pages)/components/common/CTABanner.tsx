@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function CTABanner() {
     return (
@@ -15,9 +16,9 @@ export default function CTABanner() {
                     <div className="flex justify-center">
                         <Button 
                             variant="gradient-red"
-                            className="px-12 py-4 text-lg font-medium rounded-full hover:scale-105 transition-transform duration-300"
+                            className="px-12 py-4 text-lg font-medium rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer"
                         >
-                            Start Free Trial
+                            <Link href="/contact-us">Start Free Trial</Link>
                         </Button>
                     </div>
                 </div>
