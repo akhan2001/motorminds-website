@@ -1,28 +1,28 @@
 'use client';
 
-import { Gauge, Wrench, Users, ChartBar } from 'lucide-react';
+import { Brain, Phone, Settings, BarChart3 } from 'lucide-react';
 
 const solutions = [
-	{
-		icon: Gauge,
-		title: "Performance Tracking",
-		description: "Real-time monitoring of your shop's KPIs, efficiency metrics, and service completion rates."
-	},
-	{
-		icon: Wrench,
-		title: "Equipment Management",
-		description: "Track and maintain your shop's equipment, schedule maintenance, and manage tool inventory."
-	},
-	{
-		icon: Users,
-		title: "Staff Management",
-		description: "Manage technician schedules, track productivity, and optimize workforce allocation."
-	},
-	{
-		icon: ChartBar,
-		title: "Financial Analytics",
-		description: "Comprehensive financial reporting, revenue tracking, and profit analysis tools."
-	}
+  {
+    icon: Brain,
+    title: "AI-Powered Diagnostics",
+    description: "Revolutionary AI that reads OBD data, analyzes fault codes, and provides intelligent diagnostic recommendations for faster repairs."
+  },
+  {
+    icon: Phone,
+    title: "Smart CRM System",
+    description: "AI-driven customer relationship management with automated scheduling, service history tracking, and loyalty program management."
+  },
+  {
+    icon: Settings,
+    title: "Shop Management",
+    description: "Comprehensive platform for inventory tracking, staff scheduling, financial analytics, and multi-location management."
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & Insights",
+    description: "Advanced reporting and analytics to track performance, optimize operations, and make data-driven business decisions."
+  }
 ];
 
 export default function SolutionGrid() {
