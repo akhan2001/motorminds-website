@@ -11,7 +11,7 @@ export interface Feature {
 export const features: Feature[] = [
     {
         id: "ai-diagnostics",
-        image: "/features-image-4.png",
+        image: "/features/feature-1.png",
         imageAlt: "AI-Powered Automotive Diagnostics",
         title: "AI-Powered Automotive Diagnostics",
         description: "Revolutionize repair workflows with AI that reads OBD data, analyzes fault codes, and gives predictive maintenance alerts.",
