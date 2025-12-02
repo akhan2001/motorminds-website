@@ -13,7 +13,7 @@ export const founders: Founder[] = [
 		role: "Co-Founder & CEO",
 		description: "Visionary leader with expertise in legal, financials, and business strategy.",
 		image: "/team-images/hussain_siddiqui.png",
-		favoriteCar: "1969 Chevy Camaro",
+		favoriteCar: "C8 Corvette",
 		linkedin: "https://www.linkedin.com/in/hussain-siddiqui-6386a3263"
 	},
 	{
@@ -21,7 +21,7 @@ export const founders: Founder[] = [
 		role: "Co-Founder & COO",
 		description: "Operations and cloud technology expert, driving scalable business solutions.",
 		image: "/team-images/zaid_khusro.png",
-		favoriteCar: "BMW Alpina B8",
+		favoriteCar: "BMW XM",
 		linkedin: "https://www.linkedin.com/in/zaidkhusro25"
 	},
 	{
@@ -29,7 +29,7 @@ export const founders: Founder[] = [
 		role: "Co-Founder & CTO",
 		description: "Service advisor turned software developer, leading technical innovation and development.",
 		image: "/team-images/abdullah_khan.png",
-		favoriteCar: "MK5 Toyota Supra",
+		favoriteCar: "MKV Supra",
 		linkedin: "https://www.linkedin.com/in/abdullah-khan-2001"
 	},
 	{
@@ -37,7 +37,7 @@ export const founders: Founder[] = [
 		role: "Chief Sales Officer (CSO)",
 		description: "Business and technology expert with extensive experience in client acquisition.",
 		image: "/team-images/basil_siddiqui.png",
-		favoriteCar: "BMW M5",
+		favoriteCar: "Nissan GT-R",
 		linkedin: "https://www.linkedin.com/in/basil-siddiqui-a89118212"
 	},
 ];

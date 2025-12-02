@@ -1,6 +1,6 @@
 import { Navbar } from "@/app/(pages)/components/common/NavBar"
-import Footer from "@/components/footer"
-import CTABanner from "@/components/cta-banner"
+import Footer from "@/app/(pages)/components/common/Footer"
+import CTABanner from "@/app/(pages)/components/common/CTABanner"
 
 export default function PrivacyPolicy() {
   return (
