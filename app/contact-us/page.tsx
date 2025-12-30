@@ -1,5 +1,5 @@
 import { Navbar } from "@/app/(pages)/components/common/NavBar";
-import Footer from "@/components/footer";
+import Footer from "@/app/(pages)/components/common/Footer";
 import ContactForm from "@/components/contact-form";
 import ContactInfo from "@/components/contact-info";
 import HeroBanner from "@/components/hero-banner";

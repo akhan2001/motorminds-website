@@ -56,6 +56,9 @@ export default function Footer() {
                             <Link href="/" className="block text-gray-400 hover:text-white transition-colors">
                                 Home
                             </Link>
+                            <Link href="/about-us" className="block text-gray-400 hover:text-white transition-colors">
+                                About Us
+                            </Link>
                             <Link href="/pricing" className="block text-gray-400 hover:text-white transition-colors">
                                 Pricing
                             </Link>
@@ -65,9 +68,6 @@ export default function Footer() {
                             <Link href="/contact-us" className="block text-gray-400 hover:text-white transition-colors">
                                 Contact
                             </Link>
-                            <Link href="/about-us" className="block text-gray-400 hover:text-white transition-colors">
-                                About Us
-                            </Link>
                         </div>
                     </div>
 
@@ -75,9 +75,9 @@ export default function Footer() {
                     <div>
                         <h5 className="text-white font-semibold mb-6">Contact Us</h5>
                         <div className="space-y-3">
-                            <p className="text-white">info@motorminds.ca</p>
-                            <p className="text-white">+1 (905) 805-3844</p>
-                            <p className="text-white">280 Joseph St, Kitchener ON N2H 6K8</p>
+                            <p className="text-gray-400">info@motorminds.ca</p>
+                            <p className="text-gray-400">+1 (905) 805-3844</p>
+                            <p className="text-gray-400">Based in Ontario, Canada</p>
                         </div>
                     </div>
 
@@ -117,9 +117,6 @@ export default function Footer() {
                             </Link>
                             <Link href="/terms" className="hover:text-white transition-colors">
                                 Terms & Conditions
-                            </Link>
-                            <Link href="/cookies-policy" className="hover:text-white transition-colors">
-                                Cookies Policy
                             </Link>
                         </div>
                     </div>
