@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
 					<h1 className="text-2xl font-bold text-white mb-6">Privacy Policy</h1>
 					<div className="prose prose-invert max-w-none text-[15px]">
 						<p className="text-gray-300 mb-4 text-[15px]">
-							<strong>Last Updated: May 7, 2025</strong>
+							<strong>Last Updated: December 30, 2025</strong>
 						</p>
 
 						<p className="text-gray-300 mb-6 text-[15px]">
