@@ -27,7 +27,7 @@ export default function PricingCard({
             isPopular ? 'bg-red-500/10 border-2 border-red-500' : 
             isEnterprise ? 'bg-zinc-900 border-2 border-white/20' : 'bg-zinc-900'
         }`}>
-            <div>
+            <div className="pb-8">
                 <div className="relative">
                     {isPopular && (
                         <span className="absolute -top-4 -right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">

@@ -7,44 +7,55 @@ import Image from "next/image";
 
 const pricingPlans = [
     {
-        title: "The V8 Model",
-        price: 350,
+        title: "CRM",
+        price: 250,
         features: [
-            "All features of V6",
-            "Loyalty Program",
-            "Market Place listing"
+            "Customer management",
+            "Work order tracking",
+            "Vehicle history",
+            "Service scheduling",
+            "Invoice management",
+            "Customer communication"
         ],
         usageLimits: [
-            "Up to 5 users",
-            "Custom Marketplace listing"
+            "Up to 3 users",
+            "Unlimited customers",
+            "Unlimited work orders"
         ],
-        isPopular: true
+        isPopular: false
     },
     {
-        title: "The W12 Model",
-        price: 500,
+        title: "CRM + AI Diagnostics",
+        price: 450,
         features: [
-            "All features of V8",
-            "Lead Generation",
-            "M.I.A Diagnostics"
+            "All CRM features",
+            "AI-powered diagnostics",
+            "Repair recommendations",
+            "Parts identification",
+            "Diagnostic history",
+            "Smart search"
         ],
         usageLimits: [
-            "Unlimited usage",
-            "Promoted on Marketplace"
-        ]
+            "Unlimited AI diagnostics",
+            "Unlimited customers",
+            "Unlimited work orders"
+        ],
+        isPopular: true
     },
     {
         title: "Enterprise",
         price: null,
         features: [
+            "All CRM + AI features",
             "Custom AI Models",
             "Dedicated Support Team",
             "Custom Integration Solutions",
-            "Advanced Analytics"
+            "Advanced Analytics",
+            "HIPAA Compliance",
+            "White-label options"
         ],
         usageLimits: [
-            "Unlimited Everything",
-            "Custom Contract Terms"
+            "Unlimited everything",
         ]
     }
 ];

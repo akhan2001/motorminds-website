@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Pricing | MotorMinds - Auto Shop Management Solutions",
-    description: "Explore our flexible pricing plans designed for auto shops of all sizes. Choose from V6, V8, or W12 models with features tailored to your needs.",
+    description: "Explore our flexible pricing plans designed for auto shops of all sizes. Choose from CRM, CRM + AI Diagnostics, or Enterprise plans with features tailored to your needs.",
     openGraph: {
         title: "Pricing Plans | MotorMinds",
         description: "Find the perfect plan for your auto shop.",
