@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface PricingCardProps {
     title: string;
@@ -7,7 +8,6 @@ interface PricingCardProps {
     features: string[];
     usageLimits: string[];
     isPopular?: boolean;
-    isYearly: boolean;
 }
 
 export default function PricingCard({
@@ -15,11 +15,8 @@ export default function PricingCard({
     price,
     features,
     usageLimits,
-    isPopular,
-    isYearly
+    isPopular
 }: PricingCardProps) {
-    const yearlyPrice = price ? Math.floor(price * 12 * 0.8) : null; // 20% discount for yearly
-    const displayPrice = isYearly ? yearlyPrice : price;
     const isEnterprise = price === null;
     
     return (
@@ -36,10 +33,10 @@ export default function PricingCard({
                     )}
                     <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
                     <div className="flex items-baseline gap-1">
-                        {displayPrice !== null ? (
+                        {price !== null ? (
                             <>
-                                <span className="text-4xl font-bold text-white">${displayPrice}</span>
-                                <span className="text-lg text-gray-400">{isYearly ? '/year' : '/month'}</span>
+                                <span className="text-4xl font-bold text-white">${price}</span>
+                                <span className="text-lg text-gray-400">/month</span>
                             </>
                         ) : (
                             <span className="text-2xl text-gray-400">Contact Us</span>
@@ -70,17 +67,19 @@ export default function PricingCard({
                 </div>
             </div>
 
-            <Button 
-                className={`w-full mt-auto ${
-                    isPopular 
-                        ? 'bg-red-500 text-white hover:bg-red-600' 
-                        : isEnterprise
-                        ? 'bg-zinc-800 text-white hover:bg-zinc-700 border border-white/20'
-                        : 'bg-zinc-800 text-white hover:bg-zinc-700 border border-red-500'
-                } rounded-full cursor-pointer`}
-            >
-                {isEnterprise ? 'Contact Sales' : 'Get Started'}
-            </Button>
+            <Link href="/contact-us" className="w-full mt-auto">
+                <Button 
+                    className={`w-full ${
+                        isPopular 
+                            ? 'bg-red-500 text-white hover:bg-red-600' 
+                            : isEnterprise
+                            ? 'bg-zinc-800 text-white hover:bg-zinc-700 border border-white/20'
+                            : 'bg-zinc-800 text-white hover:bg-zinc-700 border border-red-500'
+                    } rounded-full cursor-pointer`}
+                >
+                    {isEnterprise ? 'Contact Sales' : 'Get Started'}
+                </Button>
+            </Link>
         </div>
     );
 } 
