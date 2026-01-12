@@ -7,19 +7,6 @@ import Image from "next/image";
 
 const pricingPlans = [
     {
-        title: "The V6 Model",
-        price: 150,
-        features: [
-            "M.I.A",
-            "Invoicing",
-            "Mechanics Hub"
-        ],
-        usageLimits: [
-            "Additional Charges Per User",
-            "Not listed on Marketplace"
-        ]
-    },
-    {
         title: "The V8 Model",
         price: 350,
         features: [
@@ -106,7 +93,7 @@ export default function PricingSection() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     {pricingPlans.map((plan, index) => (
                         <PricingCard
                             key={index}
