@@ -8,7 +8,7 @@ import Image from "next/image";
 const pricingPlans = [
     {
         title: "CRM",
-        price: 250,
+        price: 350,
         features: [
             "Customer management",
             "Work order tracking",
@@ -26,7 +26,7 @@ const pricingPlans = [
     },
     {
         title: "CRM + AI Diagnostics",
-        price: 450,
+        price: 500,
         features: [
             "All CRM features",
             "AI-powered diagnostics",
