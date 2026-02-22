@@ -42,7 +42,7 @@ export default function TeamSection() {
 									</div>
 									
 									{/* Role */}
-									<p className="text-gray-400 text-sm">{founder.role}</p>
+									{/* <p className="text-gray-400 text-sm">{founder.role}</p> */}
 									
 									{/* Description */}
 									<p className="text-gray-400 text-sm leading-relaxed">{founder.description}</p>
